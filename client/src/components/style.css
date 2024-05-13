@@ -1,0 +1,139 @@
+/* style.css */
+
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+}
+
+a {
+    color: #1db954;
+    text-decoration: none;
+}
+
+.bg-pastel-green {
+    background-color: #a2ff9b;
+}
+
+.bg-pastel-yellow {
+    background-color: #fff59d;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.header {
+    padding: 20px;
+    background-color: #040404;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    width: 100px;
+}
+
+.header__user {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header__user img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.main-content {
+    padding: 20px;
+}
+
+.section-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 20px;
+}
+
+.grid-item {
+    background-color: #212121;
+    padding: 10px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.grid-item:hover {
+    background-color: #282828;
+}
+
+.grid-item img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.card {
+    background-color: #212121;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+}
+
+.card-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card-content {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.btn {
+    background-color: #1db954;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #23d965;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* style.css */
+
+.scrollable-container {
+    /* Set a fixed height for the container */
+    height: 100vh;
+    /* Adjust the height as needed */
+
+    /* Enable vertical scrolling */
+    overflow-y: auto;
+}
