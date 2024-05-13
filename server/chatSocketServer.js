@@ -1,10 +1,10 @@
 const WebSocket = require('ws');
-const wss = new WebSocket.Server({ port: 7000 });
+const wss = new WebSocket.Server({ port: 8000 });
 const userConnections = new Map();
 
 // Function to establish a new WebSocket connection for a user
 function establishConnection(receiver_id, message) {
-    const newSocket = new WebSocket('ws://localhost:7000');
+    const newSocket = new WebSocket('ws://localhost:8000');
     newSocket.onopen = () => {
         console.log('WebSocket connection established for user:', receiver_id);
 
